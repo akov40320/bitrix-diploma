@@ -1,0 +1,49 @@
+# --- 1C-Bitrix ---
+
+# Игнорируем ядро, установщики и пользовательский контент
+/bitrix/
+/upload/
+bitrixsetup.php
+restore.php
+
+# --- Конфигурация и безопасность (КРИТИЧНО!) ---
+# Никогда не добавляйте эти файлы в репозиторий!
+# Вместо них используйте файлы .settings.example.php и dbconn.example.php
+/bitrix/.settings.php
+/bitrix/php_interface/dbconn.php
+
+# --- Бэкапы и архивы ---
+/bitrix/backup/
+*.sql
+*.sql.gz
+*.zip
+*.gz
+*.tar
+*.rar
+
+# --- Кэш и сессии ---
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/bitrix/sessions/
+
+# --- Служебные файлы ОС ---
+.DS_Store
+Thumbs.db
+
+# --- Логи и временные файлы ---
+*.log
+*.tmp
+error.log
+debug.log
+
+# --- Настройки IDE ---
+.idea/
+.vscode/
+nbproject/
+*.sublime-project
+*.sublime-workspace
+
+# --- Зависимости Composer (если используется) ---
+/vendor/
+composer.phar
