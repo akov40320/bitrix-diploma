@@ -6,8 +6,13 @@
                 <ul class="footer__nav-list">
                     <li><a href="/catalog/">каталог</a></li>
                     <li><a href="/about/">о магазине</a></li>
+
                     <li><a href="/about/contacts/">контакты</a></li>
                     <li><a href="/about/delivery/">доставка и оплата</a></li>
+
+                    <li><a href="/contacts/">контакты</a></li>
+                    <li><a href="/delivery/">доставка и оплата</a></li>
+ main
                 </ul>
             </nav>
             <nav>

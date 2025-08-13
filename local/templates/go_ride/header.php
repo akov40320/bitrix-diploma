@@ -1,6 +1,9 @@
 <?php
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
+ 7f7k5a-codex/develop-online-store-for-bicycles
 $isMain = $APPLICATION->GetCurPage(false) === '/';
+
+main
 ?><!doctype html>
 <html lang="ru">
 <head>
@@ -26,9 +29,15 @@ $isMain = $APPLICATION->GetCurPage(false) === '/';
                 <nav class="header__nav-list-wrp">
                     <ul class="header__nav-list">
                         <li><a href="/catalog/">каталог</a></li>
+7f7k5a-codex/develop-online-store-for-bicycles
                         <li><a href="/about/contacts/">контакты</a></li>
                         <li><a href="/about/reviews/">отзывы</a></li>
                         <li><a href="/about/delivery/">доставка и оплата</a></li>
+
+                        <li><a href="/contacts/">контакты</a></li>
+                        <li><a href="/reviews/">отзывы</a></li>
+                        <li><a href="/delivery/">доставка и оплата</a></li>
+main
                     </ul>
                 </nav>
                 <div class="header__nav-box header__search">
@@ -50,6 +59,7 @@ $isMain = $APPLICATION->GetCurPage(false) === '/';
                     </a>
                 </div>
             </div>
+ 7f7k5a-codex/develop-online-store-for-bicycles
             <?php if ($isMain): ?>
                 <div class="header__wrp-first-screen">
                     <div class="header__desc">
@@ -76,4 +86,23 @@ $isMain = $APPLICATION->GetCurPage(false) === '/';
         </div>
     </div>
 <?php endif; ?>
+
+            <div class="header__wrp-first-screen">
+                <div class="header__desc">
+                    <h2>go&ride</h2>
+                    <p>велосипеды & аксессуары</p>
+                    <a href="/catalog/">магазин</a>
+                </div>
+            </div>
+            <div class="header__second-screen">
+                <picture>
+                    <source srcset="/bicycle-main/img/bycicle-mobile.png" media="(max-width: 1400px)">
+                    <source srcset="/bicycle-main/img/bicycle-first-screen.jpg">
+                    <img src="/bicycle-main/img/bicycle-first-screen.jpg" alt="bicycle"/>
+                </picture>
+            </div>
+        </div>
+    </div>
+</header>
+ main
 <main>
